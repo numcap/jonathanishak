@@ -36,6 +36,7 @@ export default function Home() {
 			ref={scope}
 		>
 			<motion.div
+      
 				id='home'
 				className={pageTW}
 				onClick={(e) => {
