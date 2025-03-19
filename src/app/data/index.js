@@ -7,7 +7,7 @@ export const ProjectsData = [
 			"TailWind",
 			"express",
 			"PostgreSQL",
-			"hosted on Vercel",
+			"Vercel Serverless Functions",
 		],
 		github: "https://github.com/numcap/KPA-website.git",
 		link: "https://kpa-website.vercel.app",
@@ -15,17 +15,17 @@ export const ProjectsData = [
 	},
 	{
 		name: "AGM Construction",
-		tags: ["React", "Create-React-App", "Sass", "express", "FTP server"],
+		tags: ["React", "Create-React-App", "SASS", "express"],
 		github: "",
 		link: "",
 		desc: "A website I was tasked to build for a Construction company based in Australia. It uses React, Create-React-App and Sass for the front-end, with express for the backend. All hosted on their local FTP server",
 	},
 	{
-		name: "NBA Stats",
-		tags: ["React", "Vite", "Springboot", "PostgreSQL", "BallDontLie API"],
-		github: "",
+		name: "MTS Spartans App",
+		tags: ["Swift", "Swift Storyboard", "iOS"],
+		github: "https://github.com/numcap/MTS-Spartans",
 		link: "",
-		desc: "A personal project for a sport I love. It uses React, Vite and Tailwind for the front-end, with springboot and postgres.",
+		desc: "My 12th grade CS final project which earned me a 98. Made an iOS app in order to track announcements, calendar dates, and events that were happening in the school",
 	},
 	{
 		name: "Personal Portfolio",
@@ -34,21 +34,37 @@ export const ProjectsData = [
 		link: "",
 		desc: "My personal portfolio. It uses React, Next and Tailwind for the front-end. Along with the Motion library that allows for smooth animations",
 	},
+	{
+		name: "todoist-clone",
+		tags: ["React", "HTML", "SCSS", "Firebase"],
+		github: "https://github.com/numcap/todoist-clone",
+		link: "",
+		desc: "My First React app, bootstrapped using Create-React-App. I used SCSS to style elements, along with Firebase's Firestore for the database in order to save todo items",
+	},
 ];
 
 export const ExperienceData = [
 	{
 		title: "Software Developer Intern",
 		company: "AGM Construction",
-		desc: "Was tasked to make a modern landing page. Along with a backend that can handle contact requests.",
-		skills: ["Create-React-App", "React", "Sass", "FTP"],
+		desc: "Designed and developed a responsive landing page using React and SCSS, improving user engagement and site performance. Built a RESTful API with Express.js to handle contact form submissions securely and efficiently.",
+		skills: ["React", "Sass", "FTP"],
 		date: "May 2024 - Aug 2024",
+		img: "agm.png",
 	},
 	{
 		title: "Full-Stack Developer",
 		company: "King's Psychology Association (KPA)",
 		desc: "Created a Landing Page, with a calendar that shows club events. The website improved club recognition by 2 times (100%), introducing 20 new visitors/club members to the club in the first month of deployment",
-		skills: ["Vite", "React", "Tailwind", "Vercel"],
+		skills: [
+			"Vite",
+			"React",
+			"TailwindCSS",
+			"Vercel",
+			"JWT Auth",
+			"PostgreSQL",
+		],
 		date: "Sept. 2024 - Present",
+		img: "KPA_plain.png",
 	},
 ];

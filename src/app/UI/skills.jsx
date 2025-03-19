@@ -38,10 +38,10 @@ const frameworks = [
 
 export function Skills() {
 	const iconStyle =
-		"lg:h-[6.5rem] lg:w-[6.5rem] w-20 h-20 rounded-2xl hover:opacity-25 transition-all duration-300";
+		"lg:h-18 lg:w-18 w-16 h-16 rounded-2xl hover:opacity-25 transition-all duration-300";
 
 	return (
-		<div className='flex flex-col p-12 h-full items-center justify-start md:justify-center gap-10 overflow-y-auto'>
+		<div className='flex flex-col p-12 h-full items-center justify-start md:justify-center gap-10 overflow-y-auto text-notion-text'>
 			<span className='text-5xl font-extrabold'>Languages</span>
 			<div className='flex gap-10 flex-wrap justify-center'>
 				{languages.map((language) => {
@@ -51,7 +51,7 @@ export function Skills() {
 								className: iconStyle,
 								key: language.name,
 							})}
-							<p className='top-[50%] -translate-y-2/4 w-full text-center absolute opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-350 font-bold text-xl'>
+							<p className='top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2 w-fit text-center absolute opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-350 font-bold text-xl'>
 								{language.name}
 							</p>
 						</span>
@@ -67,7 +67,9 @@ export function Skills() {
 								className: iconStyle,
 								key: framework.name,
 							})}
-							<p className='top-[50%] -translate-y-2/4 w-full text-center absolute opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-350 font-bold text-xl'>
+							<p
+							className='top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2 w-fit text-center absolute opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-350 font-bold text-xl'
+							>
 								{framework.name}
 							</p>
 						</span>
