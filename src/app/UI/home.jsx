@@ -26,7 +26,7 @@ export function Home() {
 					</a>
 				</span>
 			</div>
-			<div className=' justify-center flex lg:flex-grow flex-col gap-y-3'>
+			<div className=' justify-center flex lg:flex-grow xl:flex-grow-0 xl:w-1/2 flex-col gap-y-3'>
 				<span>Hey,</span>
 				<span>
 					{" "}

@@ -1,6 +1,6 @@
 export const CareerComponent = ({ job }) => {
 	return (
-		<div className='flex flex-col lg:w-[70%] w-full'>
+		<div className='flex flex-col lg:w-[70%] xl:w-[48%] w-full'>
 			<span>{job.date}</span>
 			<span className='font-bold text-4xl'>{job.title}</span>
 			<span className='flex'>

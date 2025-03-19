@@ -3,7 +3,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 export const ProjectComponent = ({ project }) => {
 	return (
-		<div className=' lg:w-[60%] w-full flex flex-col gap-2'>
+		<div className=' lg:w-[60%] xl:w-[40%] w-full flex flex-col gap-2'>
 			<a href={project.link ? project.link : null} className='group'>
 				<span
 					className={
