@@ -13,12 +13,14 @@ import { SiDjango } from "react-icons/si";
 import { SiSpringboot } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandCSharp } from "react-icons/tb";
+import { BiLogoTypescript } from "react-icons/bi";
 import { createElement } from "react";
 
 const languages = [
 	{ name: "Python", icon: FaPython },
 	{ name: "Java", icon: FaJava },
 	{ name: "JavaScript", icon: FaJsSquare },
+	{ name: "TypeScript", icon: BiLogoTypescript },
 	{ name: "HTML", icon: FaHtml5 },
 	{ name: "CSS", icon: FaCss3 },
 	{ name: "Swift", icon: FaSwift },

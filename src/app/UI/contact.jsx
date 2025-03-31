@@ -22,7 +22,7 @@ export const Contact = () => {
 					<MdOutlineEmail className='w-full h-full' />
 				</a>
 				<a
-					href='Jonathans_Resume.pdf'
+					href='Jonathan_Resume.pdf'
 					className='border border-notion-green w-20 h-20 p-4 rounded-3xl hover:bg-notion-green transition-all duration-500'
 					target="_blank"
 				>

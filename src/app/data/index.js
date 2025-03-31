@@ -1,5 +1,20 @@
 export const ProjectsData = [
 	{
+		name: "Carbon eMission",
+		tags: [
+			"React",
+			"Vite",
+			"TailWind",
+			"express",
+			"PostgreSQL",
+			"JWT Auth",
+			"OpenAI API",
+		],
+		github: "https://github.com/numcap/Carbon-eMission",
+		link: "",
+		desc: "This is a full stack app that lets you be aware of your carbon footprint, and makes you compete with friends on a leaderboard. For EWB's GreenHax, achieved 2nd in the Hackathon.",
+	},
+	{
 		name: "King's Psychology Association (KPA) Website",
 		tags: [
 			"React",
@@ -8,6 +23,7 @@ export const ProjectsData = [
 			"express",
 			"PostgreSQL",
 			"Vercel Serverless Functions",
+			"JWT Auth",
 		],
 		github: "https://github.com/numcap/KPA-website.git",
 		link: "https://kpa-website.vercel.app",

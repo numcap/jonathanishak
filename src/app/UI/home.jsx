@@ -15,7 +15,7 @@ export function Home() {
 					<a href='mailto:jonathan.r.ishak@google.com' target='_blank'>
 						<MdOutlineEmail className='w-8 h-8 hover:text-notion-red hover:scale-110 transition-all duration-300 cursor-pointer' />
 					</a>
-					<a href='Jonathans_Resume.pdf' target='_blank'>
+					<a href='Jonathan_Resume.pdf' target='_blank'>
 						<FaRegFilePdf className='w-7 h-7 hover:text-notion-green hover:scale-110 transition-all duration-300 cursor-pointer' />
 					</a>
 					<a href='https://www.linkedin.com/in/jonathan-ishak' target='_blank'>
