@@ -1,5 +1,6 @@
 "use client";
 
+import { Analytics } from "@vercel/analytics/react"
 import { AnimatePresence, motion, useAnimate } from "motion/react";
 import { useEffect, useRef, useState } from "react";
 import { Home } from "./UI/home";
@@ -132,6 +133,7 @@ export default function MainPage() {
 			className='flex flex-col md:flex-row md:h-screen text-notion-text bg-notion-gray_bg overflow-x-hidden'
 			ref={scope}
 		>
+			<Analytics />
 			{isMobile ? (
 				<>
 					<span className={pageTW}>
