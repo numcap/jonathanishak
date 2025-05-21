@@ -30,7 +30,7 @@ export function Home() {
 				<span>Hey,</span>
 				<span>
 					{" "}
-					I'm Jonathan Ishak, a full-stack software engineer from Toronto who
+					I'm Jonathan Ishak, a full-stack software engineer from Toronto, Canada who
 					enjoys tackling complex problems and building creative solutions. I
 					have a passion for both beautiful front-end responsive design and the
 					complexity of back-end systems. In my free time, I explore new
@@ -38,8 +38,7 @@ export function Home() {
 					projects.
 				</span>
 				<span>
-					What am I working on? <br /> lumenless - An app that takes you to go
-					see the stars
+					What am I working on? <br /> RightCode - An app that allows you to write handwritten code on your iPad
 				</span>
 				<span></span>
 			</div>

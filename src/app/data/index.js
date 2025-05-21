@@ -1,5 +1,12 @@
 export const ProjectsData = [
 	{
+		name: "Elite Finish Auto",
+		tags: ["React", "NextJS", "TailWind", "Formspree"],
+		github: "https://github.com/numcap/elitefinish",
+		link: "https://elitefinishauto.ca",
+		desc: "Built a clean, responsive site for a mobile car detailing business in London, Ontario using React and TailwindCSS. Showcases services, before/after results, and makes it easy for customers to get in touch. Hosted on Vercel which uses Next's SSR (Server Side Rendering) capabilities.",
+	},
+	{
 		name: "Carbon eMission",
 		tags: [
 			"React",
