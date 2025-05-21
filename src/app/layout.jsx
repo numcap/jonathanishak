@@ -12,9 +12,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Jonathan's Personal Portfolio",
-  description: "The personal portfolio of Jonathan Ishak",
-  author: "Jonathan Ishak"
+	title: "Jonathan's Personal Portfolio",
+	description: "The personal portfolio of Jonathan Ishak",
+	authors: [{ name: "Jonathan Ishak" }],
+	creator: "Jonathan Ishak",
 };
 
 export default function RootLayout({ children }) {
