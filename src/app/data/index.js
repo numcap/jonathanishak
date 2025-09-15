@@ -1,5 +1,12 @@
 export const ProjectsData = [
 	{
+		name: "RightCode",
+		tags: ["SwiftUI", "FastAPI", "Docker", "AWS SQS/EC2", "Redis", "Celery"],
+		github: "https://github.com/numcap/rightcode",
+		link: "",
+		desc: "RightCode is an iPad app that turns handwritten code into executable programs. Using Apple Pencil with SwiftUI + PencilKit, your code is captured naturally and converted into text with OCR. A scalable FastAPI backend then runs the code in secure, containerized environments, supporting Python, Java, and JavaScript. Results are streamed back instantly with real-time feedback, making it a powerful tool for students, educators, and developers who prefer handwriting over typing.",
+	},
+	{
 		name: "Elite Finish Auto",
 		tags: ["React", "NextJS", "TailWind", "Formspree"],
 		github: "https://github.com/numcap/elitefinish",
