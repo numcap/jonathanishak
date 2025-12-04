@@ -75,6 +75,29 @@ export const ProjectsData = [
 
 export const ExperienceData = [
 	{
+		title: "SWE Project Lead",
+		company: "Western Formula Racing",
+		desc: "Architected and delivered end-to-end IoT and telemetry solutions, spanning from low-level embedded C++ development on ESP32 hardware to scalable cloud infrastructure on AWS. My contributions include deploying fault-tolerant Dockerized DAQ systems supporting over 50 engineers, building real-time data pipelines with InfluxDB and FastAPI, and designing interactive React dashboards for critical vehicle diagnostics. By leveraging Agile methodologies to drive development, I ensured these initiatives met strict race deadlines while achieving zero data-loss reliability and high-performance wireless streaming.",
+		skills: [
+			"C++",
+			"Python",
+			"React",
+			"FastAPI",
+			"AWS",
+			"Docker",
+			"InfluxDB",
+			"ESP32",
+			"IoT",
+			"CAN Bus",
+			"Real-time Telemetry",
+			"DevOps",
+			"Agile",
+			"Data Visualization",
+		],
+		date: "Aug 2025 - Present",
+		img: "",
+	},
+	{
 		title: "Software Developer Intern",
 		company: "AGM Construction",
 		desc: "Designed and developed a responsive landing page using React and SCSS, improving user engagement and site performance. Built a RESTful API with Express.js to handle contact form submissions securely and efficiently.",
@@ -94,7 +117,7 @@ export const ExperienceData = [
 			"JWT Auth",
 			"PostgreSQL",
 		],
-		date: "Sept. 2024 - Present",
+		date: "Sept. 2024 - April 2025",
 		img: "KPA_plain.png",
 	},
 ];

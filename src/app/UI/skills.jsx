@@ -1,4 +1,4 @@
-import { FaPython } from "react-icons/fa";
+import { FaFigma, FaGitAlt, FaPython } from "react-icons/fa";
 import { FaJava } from "react-icons/fa";
 import { FaJsSquare } from "react-icons/fa";
 import { FaHtml5 } from "react-icons/fa";
@@ -7,14 +7,20 @@ import { FaSwift } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaSass } from "react-icons/fa6";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiExpress } from "react-icons/si";
+import { SiExpress, SiMongodb, SiPostman } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { SiDjango } from "react-icons/si";
 import { SiSpringboot } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { TbBrandCSharp } from "react-icons/tb";
-import { BiLogoTypescript } from "react-icons/bi";
+import { BiLogoPostgresql, BiLogoTypescript } from "react-icons/bi";
+import { SiCplusplus } from "react-icons/si";
+import { FaDocker } from "react-icons/fa";
+import { FaAws } from "react-icons/fa";
+import { SiGooglecloud } from "react-icons/si";
 import { createElement } from "react";
+import { IoLogoFirebase, IoLogoVercel } from "react-icons/io5";
+import { VscAzure } from "react-icons/vsc";
 
 const languages = [
 	{ name: "Python", icon: FaPython },
@@ -23,8 +29,10 @@ const languages = [
 	{ name: "TypeScript", icon: BiLogoTypescript },
 	{ name: "HTML", icon: FaHtml5 },
 	{ name: "CSS", icon: FaCss3 },
+	{ name: "SQL", icon: BiLogoPostgresql },
 	{ name: "Swift", icon: FaSwift },
 	{ name: "C Sharp", icon: TbBrandCSharp },
+	{name: "C++", icon: SiCplusplus}
 ];
 
 const frameworks = [
@@ -38,45 +46,54 @@ const frameworks = [
 	{ name: "Nextjs", icon: RiNextjsFill },
 ];
 
+// Docker, AWS, GCP, Firebase, Git, Vercel, Postman, Figma, Grafana, MongoDB
+const tools = [
+	{ name: "Docker", icon: FaDocker },
+	{ name: "AWS", icon: FaAws },
+	{ name: "GCP", icon: SiGooglecloud },
+	{ name: "Azure", icon: VscAzure },
+	{ name: "Firebase", icon: IoLogoFirebase },
+	{ name: "Git", icon: FaGitAlt },
+	{ name: "Vercel", icon: IoLogoVercel },
+	{ name: "Postman", icon: SiPostman },
+	{ name: "Figma", icon: FaFigma },
+	{ name: "MongoDB", icon: SiMongodb },
+]
+
+const sections = [
+	{ title: "Languages", items: languages },
+	{ title: "Frameworks", items: frameworks },
+	{ title: "Tools", items: tools },
+];
+
 export function Skills() {
 	const iconStyle =
 		"lg:h-18 lg:w-18 w-16 h-16 rounded-2xl hover:opacity-25 transition-all duration-300";
 
 	return (
-		<div className='flex flex-col p-12 h-full items-center justify-start md:justify-center gap-10 overflow-y-auto text-notion-text'>
-			<span className='text-5xl font-extrabold'>Languages</span>
-			<div className='flex gap-10 flex-wrap justify-center'>
-				{languages.map((language) => {
-					return (
-						<span className='relative group' key={language.name}>
-							{createElement(language.icon, {
-								className: iconStyle,
-								key: language.name,
-							})}
-							<p className='top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2 w-fit text-center absolute opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-350 font-bold text-xl'>
-								{language.name}
-							</p>
-						</span>
-					);
-				})}
-			</div>
-			<span className='text-5xl font-extrabold mt-10'>Frameworks</span>
-			<div className='flex gap-10 flex-wrap justify-center'>
-				{frameworks.map((framework) => {
-					return (
-						<span className='relative group' key={framework.name}>
-							{createElement(framework.icon, {
-								className: iconStyle,
-								key: framework.name,
-							})}
-							<p
-							className='top-[50%] -translate-y-1/2 left-[50%] -translate-x-1/2 w-fit text-center absolute opacity-0 group-hover:opacity-100 pointer-events-none transition-all duration-350 font-bold text-xl'
-							>
-								{framework.name}
-							</p>
-						</span>
-					);
-				})}
+		<div className='flex h-full flex-col items-center justify-start gap-10 overflow-y-auto p-12 text-notion-text desktop:justify-center'>
+			<div className='flex w-full max-w-6xl flex-col items-center gap-12 desktop:flex-row desktop:items-start desktop:justify-between'>
+				{sections.map((section) => (
+					<section
+						key={section.title}
+						className='flex w-full max-w-md flex-col items-center gap-6 text-center'
+					>
+						<span className='text-5xl font-extrabold'>{section.title}</span>
+						<div className='flex flex-wrap justify-center gap-10'>
+							{section.items.map((item) => (
+								<span className='group relative' key={item.name}>
+									{createElement(item.icon, {
+										className: iconStyle,
+										key: item.name,
+									})}
+									<p className='pointer-events-none absolute left-1/2 top-1/2 w-fit -translate-x-1/2 -translate-y-1/2 text-center text-xl font-bold opacity-0 transition-all duration-350 group-hover:opacity-100'>
+										{item.name}
+									</p>
+								</span>
+							))}
+						</div>
+					</section>
+				))}
 			</div>
 		</div>
 	);

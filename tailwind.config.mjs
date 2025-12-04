@@ -21,6 +21,9 @@ const config = {
 					green: "#4F9768",
 				},
 			},
+			screens: {
+				desktop: "1230px",
+			},
 		},
 	},
 	plugins: [],
